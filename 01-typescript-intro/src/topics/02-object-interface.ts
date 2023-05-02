@@ -1,4 +1,4 @@
-const skills: String[] =['Bash', 'Counter', 'Healind']
+const skills: String[] = ['Bash', 'Counter', 'Healind']
 
 interface Character {
     name: String;
@@ -7,10 +7,10 @@ interface Character {
     hometown?: String;
 }
 
-const strider:Character={
+const strider: Character = {
     name: 'Strider',
     hp: 100,
-    skill: ['Bash', 'Counter'],    
+    skill: ['Bash', 'Counter'],
 };
 
 strider.hometown = 'Medellin';
@@ -18,4 +18,4 @@ strider.hometown = 'Medellin';
 console.table(strider)
 
 
-export {};
+export { };

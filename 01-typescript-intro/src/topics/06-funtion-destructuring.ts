@@ -1,5 +1,5 @@
 //Interfase de producto
-interface Product {
+export interface Product {
     description: String;
     price: number;
 }
@@ -20,12 +20,12 @@ const table: Product = {
 //Interfase de calculo
 interface taxCalculationOptions {
     tax: number;
-    products: Product [];
+    products: Product[];
 }
 
 //Funcion de calculo, 'options' es de tipo 'taxCalculationOption'
-function taxCalculation(options: taxCalculationOptions): number [] {
-    
+export function taxCalculation(options: taxCalculationOptions): number[] {
+
     //Vatiable total inicializada en cero
     let total = 0;
 
@@ -39,7 +39,7 @@ function taxCalculation(options: taxCalculationOptions): number [] {
 
 
 
-const shoppingCart = [phone,table];
+const shoppingCart = [phone, table];
 const IVA = 0.19;
 
 
@@ -49,10 +49,10 @@ const result = taxCalculation({
 })
 
 
-console.log ('Total ', result[0]);
-console.log ('IVA ', result[1]);
+console.log('Total ', result[0]);
+console.log('IVA ', result[1]);
 
-console.table (result);
+console.table(result);
 
 
-export {};
+export { };

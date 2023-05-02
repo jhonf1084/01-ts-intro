@@ -22,9 +22,9 @@ const audioPlayer: AudioPlayer = {
 
 const song = 'New Song';
 
-const {song:anotherSong, songDuration:duration, details} = audioPlayer;
+const { song: anotherSong, songDuration: duration, details } = audioPlayer;
 
-const {author, year} = details;
+const { author, year } = details;
 
 
 // console.log ('Song: ', song);
@@ -34,12 +34,12 @@ const {author, year} = details;
 // console.log ('year: ', year);
 // console.table (audioPlayer);
 
-const [ , , trunk]: String [] = ['Goku', 'Vegeta', 'Trunk'];
+const [, , trunk]: String[] = ['Goku', 'Vegeta', 'Trunk'];
 
 
-console.error ('Personaje 3: ', trunk || 'Personaje no encontrado');
+console.error('Personaje 3: ', trunk || 'Personaje no encontrado');
 
 
 
 
-export {};
+export { };

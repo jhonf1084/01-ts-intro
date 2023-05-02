@@ -1,9 +1,9 @@
 
-interface SuperHero{
+interface SuperHero {
     name: String;
     age: number;
     address: Address;
-    showAddress:() => String;
+    showAddress: () => String;
 };
 
 interface Address {
@@ -28,9 +28,9 @@ const superHeroe: SuperHero = {
 
 
 const address = superHeroe.showAddress();
-console.log( address );
+console.log(address);
 
 
 
 
-export {};
+export { };
